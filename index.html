@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Javascript Object Viewer</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Javascript Object Viewer</h1>
+    <p>
+      Test for javascript object viewer in browser
+    </p>
+    <div id="viewer" style="border: 1px solid #d0d0d0; padding: 2px;"></div>
+    <button onclick="showHideContent(this)">Show Content in JSON</button
+    >&nbsp;&nbsp;&nbsp;
+    <a
+      id="selAll"
+      href="javascript:void(0)"
+      onclick="selectText('raw_text')"
+      style="display: none;"
+      >Select All JSON Content</a
+    >
+    <div
+      id="raw"
+      style="display: none; border: 1px solid #d0d0d0; padding: 2px;"
+    >
+      <pre id="raw_text"></pre>
+    </div>
+    <script src="test.js"></script>
+  </body>
+</html>
